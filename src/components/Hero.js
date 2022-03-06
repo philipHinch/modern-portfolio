@@ -6,19 +6,24 @@ const Hero = () => {
                     <div className="avatarContainer">
                         <img src={require('../assets/other/avatar.png')} alt="" />
                     </div>
-                    <h1>hello,</h1>
-                    <p>i'm <span className="firstNameHero">philip</span>. front-end web developer</p>
+                    <div className="avatarContainerShadow"></div>
+                    <h1 className='heroIntroHeading'>hello, i'm <span className='firstNameHero'>philip</span>,</h1>
+                    {/* <p className='heroIntro'>i'm <span className="firstNameHero">philip</span>. a front-end web developer who loves to build applications for the web.</p> */}
+                    <p className='heroIntroParagraph'>a front-end web developer who loves to build applications for the web.</p>
                 </div>
                 <div className="rightInnerHero">
                     <div>
-                        <p>{'user {'}</p>
+                        <p>{'dev {'}</p>
                         <br />
-                        <p className="code">{'firstName : "philip"'}</p>
-                        <p className="code">{'lastName : "hinchsliff"'}</p>
-                        <p className="code">{'nationality : "british/italian"'}</p>
-                        <p className="code">{'info : "passionate web developer"'}</p>
+                        <p className="code firstNameCode">{'firstName : "philip",'}</p>
+                        <p className="code lastNameCode">{'lastName : "hinchsliff",'}</p>
+                        <p className="code nationalityCode">{'nationality : "british/italian",'}</p>
+                        <p className="code infoCode">{'info : "passionate web developer"'}</p>
                         <br />
                         <p>{'}'}</p>
+                    </div>
+                    <div>
+                        <div className='btn btn-primary'>viewProjects</div>
                     </div>
                 </div>
             </div>
