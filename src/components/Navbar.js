@@ -13,26 +13,26 @@ const Navbar = () => {
                 </div>
             </li> */}
             <li className="mainLogo">
-                <div className="firstContainer">
+                <a href="#" className="firstContainer">
                     <span>{'<'}</span>
                     <span className='firstName'>philip
                     </span>
                     <span>{'/>'}</span>
 
-                </div>
-                <div className="lastContainer">
+                </a>
+                <a href="#" className="lastContainer">
                     <span>{'<'}</span>
                     <span className='lastName'>hinchsliff</span>
                     <span>{'/>'}</span>
 
-                </div>
+                </a>
 
             </li>
             <li className="navbarLinks">
                 <ul>
-                    <li><a href="#">01.aboutMe</a></li>
-                    <li><a href="#">02.myProjects</a></li>
-                    <li><a href="#">03.contactMe</a></li>
+                    <li><a href="#aboutMe" className='navbarLink'>01.aboutMe</a></li>
+                    <li><a href="#myProjects" className='navbarLink'>02.myProjects</a></li>
+                    <li><a href="#" className='navbarLink'>03.contactMe</a></li>
                 </ul>
             </li>
             {/* <li className="socialLinks">
