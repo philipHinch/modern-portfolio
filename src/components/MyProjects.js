@@ -2,7 +2,7 @@
 const MyProjects = () => {
     return (
         <div className="container" id='myProjects'>
-            <h2 className="containerHeader">02.myProjects</h2>
+            <h2 className="containerHeader"><span className='red'>02.</span>myProjects</h2>
             <div className="projectsContainer">
                 <div className="project">
                     <div className="projectLeft">

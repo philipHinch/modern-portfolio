@@ -18,7 +18,7 @@ import npmLogo from '../assets/other/npmlogo.svg';
 const AboutMe = () => {
     return (
         <div className="container" id='aboutMe'>
-            <h2 className="containerHeader ">01.aboutMe</h2>
+            <h2 className="containerHeader "><span className='red'>01.</span>aboutMe</h2>
             <div className="innerContainer">
                 <div className="aboutMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ea in esse rem quasi eius autem facilis aperiam velit magni dignissimos quaerat nisi, repudiandae animi totam optio fugit cumque alias provident, rerum consequuntur veniam explicabo? Sint distinctio veritatis, doloribus exercitationem eaque vel nobis accusamus soluta id molestias deleniti minus, magnam fuga expedita nulla optio? Dicta, adipisci! Distinctio, soluta nisi? Unde similique quam nam fugiat fugit temporibus repudiandae vitae ipsam commodi, rem atque, sapiente optio amet facere eaque, nesciunt iste dolor sit quas nobis fuga magnam dolore! Distinctio, culpa perspiciatis? Recusandae eaque aliquam animi enim tenetur aperiam, modi natus at molestias?</div>
                 <h2 className="containerSubHeader"><span className='red'>//</span>technologies</h2>

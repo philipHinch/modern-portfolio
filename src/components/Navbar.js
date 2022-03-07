@@ -30,9 +30,9 @@ const Navbar = () => {
             </li>
             <li className="navbarLinks">
                 <ul>
-                    <li><a href="#aboutMe" className='navbarLink'>01.aboutMe</a></li>
-                    <li><a href="#myProjects" className='navbarLink'>02.myProjects</a></li>
-                    <li><a href="#" className='navbarLink'>03.contactMe</a></li>
+                    <li><a href="#aboutMe" className='navbarLink'><span className='red'>01.</span>aboutMe</a></li>
+                    <li><a href="#myProjects" className='navbarLink'><span className='red'>02.</span>myProjects</a></li>
+                    <li><a href="#" className='navbarLink'><span className='red'>03.</span>contactMe</a></li>
                 </ul>
             </li>
             {/* <li className="socialLinks">

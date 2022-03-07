@@ -20,7 +20,7 @@ const Hero = () => {
                         <p className="code nationalityCode">{'nationality : "british/italian",'}</p>
                         <p className="code infoCode">{'info : "passionate web developer"'}</p>
                         <br />
-                        <p>{'}'}</p>
+                        <p>{'};'}</p>
                     </div>
                     <div>
                         <div className='btn btn-primary'>viewProjects</div>
