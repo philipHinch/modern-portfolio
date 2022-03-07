@@ -14,13 +14,37 @@ import bootstrapLogo from '../assets/other/bootstraplogo.svg';
 import routerLogo from '../assets/other/reactrouterlogo.svg';
 import jestLogo from '../assets/other/jestlogo.svg';
 import npmLogo from '../assets/other/npmlogo.svg';
+//icons
+import { Icon } from '@iconify/react';
+//hooks
+import { useState } from 'react';
+
 
 const AboutMe = () => {
+
+    const [readMore, setReadMore] = useState(false)
+
+
+
     return (
         <div className="container" id='aboutMe'>
             <h2 className="containerHeader "><span className='red'>01.</span>aboutMe</h2>
             <div className="innerContainer">
                 <div className="aboutMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ea in esse rem quasi eius autem facilis aperiam velit magni dignissimos quaerat nisi, repudiandae animi totam optio fugit cumque alias provident, rerum consequuntur veniam explicabo? Sint distinctio veritatis, doloribus exercitationem eaque vel nobis accusamus soluta id molestias deleniti minus, magnam fuga expedita nulla optio? Dicta, adipisci! Distinctio, soluta nisi? Unde similique quam nam fugiat fugit temporibus repudiandae vitae ipsam commodi, rem atque, sapiente optio amet facere eaque, nesciunt iste dolor sit quas nobis fuga magnam dolore! Distinctio, culpa perspiciatis? Recusandae eaque aliquam animi enim tenetur aperiam, modi natus at molestias?</div>
+                <br />
+                <div className={`aboutMe aboutMe2 ${ readMore ? 'grow' : '' }`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt, ullam autem, magni rem quia nesciunt aperiam, vel architecto recusandae dolorum fuga reiciendis itaque. Voluptatum ad temporibus vitae architecto impedit. Laborum nobis veritatis est repudiandae quod quo quaerat, cumque animi temporibus quam maiores fugiat! Dicta asperiores quo nobis et distinctio praesentium obcaecati, dolor, hic, corporis beatae perspiciatis cumque fugiat voluptatum tempore atque qui! Enim nisi recusandae commodi? Voluptates dolore autem atque qui totam dolorum maxime ad modi inventore rerum numquam voluptatibus asperiores voluptatem architecto nam voluptas, molestias temporibus consectetur cum beatae laudantium perspiciatis dolores sit incidunt! Voluptatum unde ducimus magnam!</div>
+                {/* {readMore &&
+                    <>
+                        <br />
+                        <div className="aboutMe aboutMe2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt, ullam autem, magni rem quia nesciunt aperiam, vel architecto recusandae dolorum fuga reiciendis itaque. Voluptatum ad temporibus vitae architecto impedit. Laborum nobis veritatis est repudiandae quod quo quaerat, cumque animi temporibus quam maiores fugiat! Dicta asperiores quo nobis et distinctio praesentium obcaecati, dolor, hic, corporis beatae perspiciatis cumque fugiat voluptatum tempore atque qui! Enim nisi recusandae commodi? Voluptates dolore autem atque qui totam dolorum maxime ad modi inventore rerum numquam voluptatibus asperiores voluptatem architecto nam voluptas, molestias temporibus consectetur cum beatae laudantium perspiciatis dolores sit incidunt! Voluptatum unde ducimus magnam!</div>
+                    </>
+                } */}
+                <div className="btn btn-primary readMore" onClick={() => setReadMore(!readMore)}>
+                    {readMore ? 'close' : 'readMore'}
+                    {readMore ? <Icon icon="charm:chevron-up" className='chevronIcon' />
+                        : <Icon icon="ci:chevron-big-down" className='chevronIcon' />}
+                </div>
+
                 <h2 className="containerSubHeader"><span className='red'>//</span>technologies</h2>
                 <div className="technologies">
                     <div className="technologyContainer" title='HTML 5'>

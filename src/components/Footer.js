@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <h1>Footer</h1>
+            <small>Copyright &copy; 2022 - <a href="https://github.com/philipHinch" className="githubLink" target="_blank">https://github.com/philipHinch</a></small>
         </footer>
     );
 }

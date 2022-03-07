@@ -23,7 +23,7 @@ const Hero = () => {
                         <p>{'};'}</p>
                     </div>
                     <div>
-                        <div className='btn btn-primary'>viewProjects</div>
+                        <a href='#myProjects' className='btn btn-primary heroButton'>viewProjects</a>
                     </div>
                 </div>
             </div>

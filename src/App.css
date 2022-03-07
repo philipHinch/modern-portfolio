@@ -23,12 +23,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace !important;
+  font-size: 1.1rem !important;
   color: var(--very-dark-blue);
   background-color: var(--white);
   min-height: 100vh;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
   background-color: #edf2f4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.06'%3E%3Cpolygon fill='%23e9c2cb' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e593a3' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e1637a' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23dd3452' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D90429' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -37,16 +37,25 @@ body {
 .fixed {
   position: fixed;
 }
-
+h5 {
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
+}
+h3 {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+}
 ul {
   list-style: none;
+}
+a {
+  color: var(--very-dark-bluedark-blue) !important;
 }
 a.navbarLink {
   position: relative;
   text-decoration: none;
   padding: 0 15px;
   padding-bottom: 5px;
-  color: var(--very-dark-bluedark-blue);
 }
 a.navbarLink:hover {
   transition: color 0.2s ease;
@@ -67,13 +76,15 @@ a.navbarLink:hover::before {
   transform: scaleX(1);
 }
 .btn {
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   cursor: pointer;
   transition: background-color 0.2s ease;
   color: var(--white);
+  border: none !important;
+  border-radius: 0 !important;
 }
 .btn-primary {
-  background-color: var(--medium-red);
+  background-color: var(--medium-red) !important;
 }
 .btn-primary:hover {
   background-color: var(--salmon);
@@ -168,7 +179,7 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 0.2s ease;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--very-dark-blue);
+  background-color: var(--dark-red);
 }
 /* navbar */
 .navbar {
@@ -237,6 +248,7 @@ a.lastContainer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
   bottom: 0;
   left: 2%;
 }
@@ -367,6 +379,7 @@ a.lastContainer {
 }
 .avatarContainerShadow:hover {
   background-color: var(--salmon);
+  background-color: var(--dark-red);
 }
 .avatarContainer img {
   position: absolute;
@@ -412,9 +425,38 @@ a.lastContainer {
   animation: colorChange 2s ease-in-out;
   animation-delay: 6s;
 }
+.heroButton {
+  text-decoration: none;
+}
 /* about me */
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .aboutMe {
   line-height: 30px;
+}
+.aboutMe2 {
+  /* border: 1px solid green; */
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.grow {
+  max-height: 500px;
+}
+.readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block; */
+  margin-top: 50px;
+  /* margin-bottom: -50px; */
+}
+.chevronIcon {
+  font-size: 2rem;
+  margin-left: 5px;
 }
 .technologies {
   display: flex;
@@ -439,6 +481,9 @@ a.lastContainer {
 .project {
   display: flex;
   color: var(--white);
+  border: 2px solid var(--very-dark-blue);
+  max-width: 1600px;
+  margin-bottom: 50px;
 }
 .projectLeft,
 .projectRight {
@@ -450,19 +495,26 @@ a.lastContainer {
 }
 .projectLeft {
   border: none;
-  border: 2px solid var(--very-dark-blue);
+  /* background-color: var(--very-dark-blue); */
+
+  background-color: var(--white);
 }
 .projectRight {
   padding: 30px;
   background-color: var(--very-dark-blue);
-  border: 2px solid var(--very-dark-blue);
   justify-content: space-between;
 }
 .projectImageContainer {
   overflow: hidden;
   background-size: cover;
   min-width: 300px;
-  border: 1px solid var(--very-dark-blue);
+  background-color: var(--white);
+  /* border: 1px solid var(--very-dark-blue); */
+  /* margin-right: 10px; */
+}
+.projectImageContainer > :first-child {
+  width: 100%;
+  height: 100%;
 }
 .projectImageContainer img {
   width: 100%;
@@ -491,9 +543,20 @@ a.lastContainer {
 }
 .projectDetails {
   text-align: right;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .projectTechs {
   flex-wrap: wrap;
+  margin-left: auto;
+  line-height: 30px;
+}
+.triangleIcon {
+  color: var(--medium-red);
+  font-size: 1.1rem;
+  margin-right: 2px;
 }
 .projectTechs small {
   background-color: var(--very-dark-blue);
@@ -506,15 +569,38 @@ a.lastContainer {
 .projectLinks {
   display: flex;
   margin-left: auto;
+  margin-top: 5px;
 }
 .projectLinks .btn {
   margin-left: 5px;
 }
-
+/* carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.carousel-indicators {
+  filter: invert(1);
+  opacity: 0;
+}
 /* footer */
 footer {
   margin-top: 500px;
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+footer small {
+  padding-bottom: 10px;
+}
+.githubLink {
+  text-decoration: none;
+  color: var(--medium-red) !important;
+  transition: color 0.2s ease;
+}
+.githubLink:hover {
+  color: var(--dark-red) !important;
 }
 /* animations */
 @keyframes borderPulse {
@@ -535,6 +621,7 @@ footer {
     color: var(--white);
   }
 }
+/* typewriter credit to:https://codepen.io/daviddcarr/pen/XVyQMM */
 @keyframes type {
   0% {
     width: 0;

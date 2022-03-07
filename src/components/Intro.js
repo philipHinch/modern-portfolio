@@ -1,6 +1,6 @@
 const Intro = () => {
     return (
-        <div class="css-typing fixed">
+        <div className="css-typing fixed">
             <div>
                 <p>
                     <span>{'<'}</span>philip<span>{'/>'}</span>
