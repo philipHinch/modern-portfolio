@@ -2,6 +2,10 @@
 
 Work in progress...
 
+Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
+
+
+
 ![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 ### Install Dependencies
