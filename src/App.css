@@ -415,11 +415,15 @@ a.lastContainer {
   background-color: var(--very-dark-blue);
   line-height: 30px;
   z-index: 2;
-
+  transition: all 0.3s ease-in-out;
   /* background-color: #161722;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23172235' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23182d48' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%231a395c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%231b446f' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%231C4F82' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-position: top; */
+}
+.rightInnerHero:hover {
+  border-right: 15px solid var(--medium-red);
+  border-bottom: 15px solid var(--medium-red);
 }
 .firstNameHero {
   color: var(--medium-red);
@@ -463,7 +467,7 @@ a.lastContainer {
   transition: 0.5s;
 }
 .grow {
-  max-height: 500px;
+  max-height: 800px !important;
 }
 .readMore {
   display: flex;
@@ -604,6 +608,62 @@ a.lastContainer {
 .viewMoreProjects {
   margin-top: 50px;
 }
+/* other project */
+.otherProjectsSubHeader {
+  margin-top: 50px;
+}
+.otherProjectsContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.otherProjectGrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.otherProject {
+  width: 300px;
+  height: 300px;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 10px;
+}
+.otherProjectTop {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.otherProjectImage {
+  flex: 1;
+  text-align: start;
+}
+.otherProjectIcon {
+  color: var(--medium-red);
+  font-size: 4rem;
+}
+.otherProjectText {
+  text-align: end;
+  flex: 1;
+}
+.otherProjectTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--light-red);
+}
+.otherProjectTechs {
+  display: flex;
+  justify-content: flex-end;
+}
+.otherTech {
+  margin-right: 5px;
+  color: var(--very-dark-blue);
+  background-color: var(--white);
+  padding: 0px 4px;
+}
+
 /* carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

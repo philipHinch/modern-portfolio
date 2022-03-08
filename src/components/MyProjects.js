@@ -4,6 +4,7 @@ import Project from "./Project";
 import { Icon } from '@iconify/react';
 //hooks
 import { useState } from "react";
+import OtherProject from "./OtherProject";
 
 
 const projects = [
@@ -76,8 +77,23 @@ const MyProjects = () => {
                     <Project key={project.title} type={project.type} title={project.title} details={project.extraInfo} link={project.link} repo={project.repo} techs={project.tech} images={project.images} />
                 ))}
             </div>
+
+            <div className={`otherProjectsContainer ${ viewMore ? 'grow' : '' }`}>
+                <h2 className="containerSubHeader otherProjectsSubHeader"><span className='red'>//</span>otherProjects</h2>
+                <div className={`otherProjectGrid`}>
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                    <OtherProject />
+                </div>
+            </div>
+
             <div className="btn btn-primary viewMoreProjects" onClick={() => setViewMore(!viewMore)}>
-                {viewMore ? 'close' : 'moreProjects'}
+                {viewMore ? 'close' : 'otherProjects'}
                 {viewMore ? <Icon icon="charm:chevron-up" className='chevronIcon' />
                     : <Icon icon="ci:chevron-big-down" className='chevronIcon' />}
             </div>
