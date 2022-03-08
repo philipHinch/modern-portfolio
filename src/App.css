@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 /* variables */
 :root {
-  --white: #edf2f4;
+  --white: #ffffff;
   --salmon: #ee8b98;
   --light-blue: #8d99ae;
   --dark-blue: #1c4f82;
@@ -51,6 +51,9 @@ ul {
 a {
   color: var(--very-dark-bluedark-blue) !important;
 }
+a:focus {
+  box-shadow: none !important;
+}
 a.navbarLink {
   position: relative;
   text-decoration: none;
@@ -79,7 +82,7 @@ a.navbarLink:hover::before {
   padding: 10px 20px !important;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  color: var(--white);
+  color: var(--white) !important;
   border: none !important;
   border-radius: 0 !important;
 }
@@ -87,8 +90,7 @@ a.navbarLink:hover::before {
   background-color: var(--medium-red) !important;
 }
 .btn-primary:hover {
-  background-color: var(--salmon);
-  background-color: var(--dark-red);
+  background-color: var(--dark-red) !important;
 }
 .container {
   display: flex;
@@ -183,7 +185,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* navbar */
 .navbar {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   z-index: 2000;
   background-color: var(--white);
@@ -250,7 +252,7 @@ a.lastContainer {
   align-items: center;
   margin: 0;
   bottom: 0;
-  left: 2%;
+  left: 1%;
 }
 .socialLinks {
   display: flex;
@@ -280,20 +282,37 @@ a.lastContainer {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  right: 2%;
+  right: 3%;
 }
 .email {
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem !important;
   margin-left: 5px;
   margin-bottom: 140px;
   cursor: pointer;
   transform: rotate(90deg);
-  color: var(--very-dark-blue);
+  color: var(--very-dark-blue) !important;
   transition: all 0.2s ease-in-out;
+  text-decoration: none !important;
 }
 .email:hover {
+  color: var(--medium-red) !important;
+  font-size: 1.05rem !important;
+}
+.copyIcon {
+  margin-bottom: 150px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+}
+.copyIcon:hover {
+  font-size: 1.6rem;
   color: var(--medium-red);
-  font-size: 1.05rem;
+}
+.copySuccess {
+  margin-bottom: 10px;
 }
 /* hero */
 .heroContainer {
@@ -481,9 +500,13 @@ a.lastContainer {
 .project {
   display: flex;
   color: var(--white);
-  border: 2px solid var(--very-dark-blue);
+  /* border: 2px solid var(--very-dark-blue); */
   max-width: 1600px;
-  margin-bottom: 50px;
+  /* max-height: 600px; */
+  margin-bottom: 100px;
+}
+.project:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .projectLeft,
 .projectRight {
@@ -495,9 +518,9 @@ a.lastContainer {
 }
 .projectLeft {
   border: none;
-  /* background-color: var(--very-dark-blue); */
 
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  /* background-color: var(--very-dark-blue); */
 }
 .projectRight {
   padding: 30px;
@@ -508,8 +531,12 @@ a.lastContainer {
   overflow: hidden;
   background-size: cover;
   min-width: 300px;
+  max-height: 400px;
   background-color: var(--white);
-  /* border: 1px solid var(--very-dark-blue); */
+  /* border-top: 1px solid var(--very-dark-blue);
+  border-bottom: 1px solid var(--very-dark-blue); */
+  /* background-color: var(--very-dark-blue); */
+  border: 1px solid var(--very-dark-blue);
   /* margin-right: 10px; */
 }
 .projectImageContainer > :first-child {
@@ -574,6 +601,9 @@ a.lastContainer {
 .projectLinks .btn {
   margin-left: 5px;
 }
+.viewMoreProjects {
+  margin-top: 50px;
+}
 /* carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -582,6 +612,62 @@ a.lastContainer {
 .carousel-indicators {
   filter: invert(1);
   opacity: 0;
+}
+/* contact me */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+  width: 100%;
+}
+input,
+textarea {
+  border: 2px solid var(--very-dark-blue);
+  padding: 10px 15px;
+  outline: none !important;
+  width: 100%;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+input,
+textarea,
+.sendBtn {
+  max-width: 600px;
+}
+input::-webkit-input-placeholder {
+  color: var(--very-dark-blue);
+  opacity: 0.4;
+}
+textarea::-webkit-input-placeholder {
+  color: var(--very-dark-blue);
+  opacity: 0.4;
+}
+#email:focus {
+  border-color: var(--medium-red) !important;
+}
+#myEmail {
+  /* background-color: var(--medium-red); */
+  /* opacity: 0.3; */
+  background-color: var(--salmon);
+  margin-top: 10px;
+  border: none;
+}
+#myEmail::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+#textarea {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  resize: none !important;
+}
+#textarea:focus {
+  border-color: var(--medium-red);
+}
+.sendIcon {
+  font-size: 1.2rem;
 }
 /* footer */
 footer {

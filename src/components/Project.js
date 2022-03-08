@@ -6,40 +6,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 //icons
 import { Icon } from '@iconify/react';
+//animate on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+AOS.init({
+    once: true,
+    mirror: false,
+    anchorPlacement: 'center-bottom'
+});
 
-
-const Project = ({ type, title, details, techs, images }) => {
+const Project = ({ type, title, details, link, repo, techs, images }) => {
 
     const [index, setIndex] = useState(0);
-
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
 
     return (
-        <div className="project">
+        <div className="project" data-aos="fade-in">
             <div className="projectLeft">
-                {/* <div className="projectImageContainer">
-                    <img src={require('../assets/projectImages/mymoney.png')} alt="" />
-                </div> */}
-
                 <div className='projectImageContainer'>
                     <Carousel activeIndex={index} onSelect={handleSelect} interval={null} touch={true}>
-                        <Carousel.Item>
+                        {/* <Carousel.Item>
                             <img
                                 className="d-block w-100"
                                 src={require('../assets/projectImages/contacts.png')}
                                 alt="Third slide"
                             />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={require('../assets/projectImages/mymoney.png')}
-                                alt="Third slide"
-                            />
-                        </Carousel.Item>
+                        </Carousel.Item> */}
+                        {images && images.map((image) => (
+                            <Carousel.Item key={image}>
+                                <img
+                                    className="d-block w-100"
+                                    src={`${ image }`}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+                        ))}
                     </Carousel>
                 </div>
 
@@ -54,13 +58,10 @@ const Project = ({ type, title, details, techs, images }) => {
                         <small className="tech" key={tech}>
                             {tech}</small>
                     ))}
-                    {/* <small className="tech">react</small>
-                    <small className="tech">firebase</small>
-                    <small className="tech">tailwind css</small> */}
                 </div>
                 <div className="projectLinks">
-                    <div className="btn btn-primary">viewProject</div>
-                    <div className="btn btn-primary">viewRepo</div>
+                    <a href={link} className="btn btn-primary" target={'_blank'}>viewProject</a>
+                    <a href={repo} className="btn btn-primary" target={'_blank'}>viewRepo</a>
                 </div>
             </div>
         </div>

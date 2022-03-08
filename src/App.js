@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 import Email from './components/Email';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -31,6 +32,7 @@ function App() {
       <Hero />
       <AboutMe />
       <MyProjects />
+      <ContactMe />
       <Footer />
     </div>
   );
