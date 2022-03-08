@@ -467,7 +467,10 @@ a.lastContainer {
   transition: 0.5s;
 }
 .grow {
-  max-height: 800px !important;
+  max-height: 500px !important;
+}
+.grow2 {
+  max-height: 1000px !important;
 }
 .readMore {
   display: flex;

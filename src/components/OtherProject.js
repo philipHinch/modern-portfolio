@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 
 
-const OtherProject = () => {
+const OtherProject = ({ title, tech, extraInfo, repo, link, type }) => {
     return (
         <div className="otherProject">
             <div className="otherProjectTop">
@@ -11,16 +11,19 @@ const OtherProject = () => {
                     <Icon icon="ant-design:project-filled" className='otherProjectIcon' />
                 </div> */}
                 <div className='otherProjectText'>
-                    <div className="otherProjectTitle">myMoney</div>
+                    <div className="otherProjectTitle">{title}</div>
                     <ul className="otherProjectTechs">
-                        <li className="otherTech">react</li>
+                        {tech && tech.map((t) => (
+                            <li className="otherTech" key={t}>{t}</li>
+                        ))}
+                        {/* <li className="otherTech">react</li>
                         <li className="otherTech">html</li>
-                        <li className="otherTech">css</li>
+                        <li className="otherTech">css</li> */}
                     </ul>
                 </div>
             </div>
             <div className="otherProjectBottom">
-                <p className="otherProjectDetails">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe iste nam adipisci eius illum ipsam ullam non. Temporibus, corporis.</p>
+                <p className="otherProjectDetails">{extraInfo}</p>
             </div>
         </div>
     );

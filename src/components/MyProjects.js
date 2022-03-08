@@ -65,6 +65,73 @@ const projects = [
     }
 ];
 
+const otherProjects = [
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'myMoney',
+        tech: ['react', 'firebase', 'hooks',],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    }
+]
+
 const MyProjects = () => {
 
     const [viewMore, setViewMore] = useState(false)
@@ -78,17 +145,13 @@ const MyProjects = () => {
                 ))}
             </div>
 
-            <div className={`otherProjectsContainer ${ viewMore ? 'grow' : '' }`}>
+            <div className={`otherProjectsContainer ${ viewMore ? 'grow2' : '' }`}>
                 <h2 className="containerSubHeader otherProjectsSubHeader"><span className='red'>//</span>otherProjects</h2>
-                <div className={`otherProjectGrid`}>
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
-                    <OtherProject />
+                <div className='otherProjectGrid'>
+                    {otherProjects && otherProjects.map((project) => (
+                        <OtherProject title={project.title} tech={project.tech} extraInfo={project.extraInfo} repo={project.repo} link={project.link} type={project.type} key={project.title} />
+                    ))}
+                    {/* <OtherProject title={otherProjects.title} tech={otherProjects.tech} extraInfo={otherProjects.extraInfo} repo={otherProjects.repo} link={otherProjects.link} type={otherProjects.type} /> */}
                 </div>
             </div>
 
