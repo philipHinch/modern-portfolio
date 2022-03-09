@@ -4,6 +4,8 @@ I decided to create a new and more modern-looking portfolio using the latest tec
 
 Please check it out!
 
+![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
+
 **View NEW Portfolio:**
 
 [<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_medium.png" />](https://philiphinchsliff.vercel.app/)
