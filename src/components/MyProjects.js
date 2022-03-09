@@ -10,17 +10,17 @@ import OtherProject from "./OtherProject";
 const projects = [
     {
         title: 'myMoney',
-        tech: ['react', 'async/await', 'firebase', 'react-router', 'react hooks', 'state management'],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user authentication together with a database and storage for profile images. Each user can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username. There is a lot of asyncronus programming. I managed state with useReducer, useContext and useState.",
+        tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'state management'],
+        extraInfo: "\"crud\" application with user authentication, database and storage for profile images. users can sign up and then add/remove their expenses and incomes. they can also update their profile picture and username. state managed with useReducer, useContext and useState.",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
         repo: 'https://github.com/philipHinch/my_money',
         link: 'https://mymoneytracker.vercel.app/',
         type: 'personal project'
     },
     {
-        title: 'cinemix',
-        tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'This is a personal React project. This fully responsive app will allow you to find your favourite movies and save them to your watchlist. You can check the latest, top or upcoming movies or search the films you want with the searchbar at the top. Click on a movie to view the movie information which includes a short description, trailers and much more. The movie data was retrieved from The Movie Database - TMDB.',
+        title: 'cinemix movie app',
+        tech: ['react', 'tailwind-css', 'async-await ', 'fetch api', 'high order functions', 'local storage'],
+        extraInfo: 'find your favourite movies and save them to your watchlist. check the latest, top or upcoming movies or search the films you want with the searchbar. click on a movie to view movie details. movie data was retrieved from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview1.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview2.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview3.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview4.png'],
         repo: 'https://github.com/philipHinch/cinemix_movies_app',
         link: 'https://cinemix-movies-app.vercel.app/',
@@ -28,8 +28,8 @@ const projects = [
     },
     {
         title: 'my contacts app',
-        tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: "This is a personal React project focused on form handling and controlled inputs. Contacts App will allow you to store your contact's information, it will also allow you to filter through them when searching for a specific contact and it will also allow you to sort the contacts by first or last name when clicking on the sort arrows. There is an alert everytime a color is selected and nice css transitions. I used useEffect and useState for state management. This app is fully responsive. With this project I have realised how much better it is to create react applications rather than creating them with vanilla javascript",
+        tech: ['react', 'hooks', 'high order functions', 'local storage'],
+        extraInfo: "a fully responsive app focused on form handling and controlled inputs. save a contact information to the list. filter and sort through all the contact list",
         images: ['https://raw.githubusercontent.com/philipHinch/contacts-app/main/src/assets/preview1.png', 'https://raw.githubusercontent.com/philipHinch/contacts-app/main/src/assets/preview2.png'],
         repo: 'https://github.com/philipHinch/contacts-app',
         link: 'https://my-contacts-appp.herokuapp.com/',
@@ -37,8 +37,8 @@ const projects = [
     },
     {
         title: "phil's recipes",
-        tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'The amount of time I spent building this project (being my very first react project) helped me really understand how some fundamental react concepts work. Here you can search your favourite meals and filter them by category. When clicking on a meal, a modal will pop up with all the detailed info about that meal. The recipes are fetched from TheMealDB API (https://www.themealdb.com/). I used useState & useEffect hooks for state management.',
+        tech: ['react', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
+        extraInfo: 'search your favourite meals and filter through them by category. clicking on a meal will show a modal with the detailed info about that meal. recipes are fetched from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview1.png', 'https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview2.png', 'https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview3.png'],
         repo: 'https://github.com/philipHinch/phils-recipes',
         link: 'https://phils-recipes.netlify.app/',
@@ -46,8 +46,8 @@ const projects = [
     },
     {
         title: 'my foods app',
-        tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: "My Foods will help you to look for your next delicious meal! Search your meals based on their category or their country of provenience. The search page will allow you to search meals by their name. When you find your favourite meal you can save it to your favourites by clicking on the heart. This project was built in an OOP (object oriented programming) style. Data was retrieved from a public api TheMealDB. I used async/await together with fetch to grab the data from the api. Favourite meals are persisted to local storage. High order functions have been used to iterate through data. There is a lot of DOM manipulation and event listeners. CSS animation was used to animate the heart on click. The page colors are stored in CSS variables.",
+        tech: ['js classes', '(OOP)', 'async-await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
+        extraInfo: "search your meals based on their category or their country of provenience. the search page will allow you to search meals by their name. save your favourite meals to your favourites page. app built in an OOP (object oriented programming) style. Data retrieved from a public api",
         images: ['https://raw.githubusercontent.com/philipHinch/my-foods-app/main/images/preview1.png'],
         repo: 'https://github.com/philipHinch/my-foods-app',
         link: 'https://philiphinch.github.io/my-foods-app/',
@@ -56,8 +56,8 @@ const projects = [
     },
     {
         title: 'world countries',
-        tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'This is an app that provides you with information about all the 250 countries of the world. This app will allow you to search your countries or sort them either by population or by area. The data was retrieved from Rest Countries API (https://restcountries.com/#api-endpoints-v2). I used fetch together with async/await to fetch the data and i used high order functions like "sort" and "filter" for the filtering and sorting of the countries',
+        tech: ['js', 'async-await', 'fetch api', 'high order functions'],
+        extraInfo: 'app that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. The data was retrieved from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
         repo: 'https://github.com/philipHinch/world-countries',
         link: 'https://world-countries-database.netlify.app/',
@@ -67,69 +67,73 @@ const projects = [
 
 const otherProjects = [
     {
-        title: 'pokemon cards',
-        tech: ['react', 'firebase', 'hooks', 'router'],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
+        title: 'pokemon flip cards',
+        tech: ['js', 'css', 'fetch api', 'async/await', 'animations'],
+        extraInfo: "search your favourite pokemon and check out their stats. the random button will choose the pokemon for you",
+        repo: 'https://github.com/philipHinch/pokemon-cards',
+        link: 'https://pokemon-cards-viewer.netlify.app/',
         type: 'personal project'
     },
     {
         title: 'weather app',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'todo list',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'gradient generator',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'gym website',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'restaurant website',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'number guesser',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
+        tech: ['js', 'css', 'fetch api', 'async/await'],
+        extraInfo: "this is a modern looking weather application with data fetched from a public api",
+        repo: 'https://github.com/philipHinch/iWeather-application',
+        link: 'https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=2s&ab_channel=neo90sr',
         type: 'personal project'
     },
     {
         title: 'old portfolio',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
+        tech: ['js', 'css', 'local-storage',],
+        extraInfo: "my old but not so old personal portfolio. it has a couple of nice features ",
+        repo: 'https://github.com/philipHinch/my-portfolio',
+        link: 'https://philhinchportfolio.netlify.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'interactive italy map',
+        tech: ['js', 'css', 'html',],
+        extraInfo: "select the region and the aside section will show some information about the specific region",
+        repo: 'https://github.com/philipHinch/interactive-map-of-italy',
+        link: 'https://mapofitaly.netlify.app/',
+        type: 'personal project'
+    },
+
+    {
+        title: 'the solar system',
+        tech: ['js', 'css', 'async/await', 'animations'],
+        extraInfo: "check out information about our neighbouring planets. data retrieved from a public api",
+        repo: 'https://github.com/philipHinch/solar-system',
+        link: 'https://philiphinch.github.io/solar-system/',
+        type: 'personal project'
+    },
+
+    {
+        title: 'shopping list',
+        tech: ['js', 'css', 'html',],
+        extraInfo: "simple shopping list. add items to the list, cross them out or delete them",
+        repo: 'https://github.com/philipHinch/My-Shopping-List',
+        link: 'https://shoppinglistmy.netlify.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'gym website',
+        tech: ['js', 'css', 'html',],
+        extraInfo: "a fully responsive simple but cool looking gym website",
+        repo: 'https://github.com/philipHinch/PowerGym',
+        link: 'https://powergyms.netlify.app/',
+        type: 'personal project'
+    },
+
+    {
+        title: 'number guessing game',
+        tech: ['js', 'css', 'html',],
+        extraInfo: "a simple number guessing game",
+        repo: 'https://github.com/philipHinch/numberguesser',
+        link: 'https://mynumberguesser.netlify.app/',
         type: 'personal project'
     }
+
 ]
 
 const MyProjects = () => {
