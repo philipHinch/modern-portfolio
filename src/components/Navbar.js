@@ -1,7 +1,12 @@
 //icons
 import { Icon } from '@iconify/react';
 
-const Navbar = () => {
+const Navbar = ({ setMenuOpen, menuOpen }) => {
+
+    const handleHamburgerClick = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
         <ul className="navbar">
             {/* <li className="mainLogo">
@@ -34,6 +39,9 @@ const Navbar = () => {
                     <li><a href="#myProjects" className='navbarLink'><span className='red'>02.</span>myProjects</a></li>
                     <li><a href="#contactMe" className='navbarLink'><span className='red'>03.</span>contactMe</a></li>
                 </ul>
+            </li>
+            <li className="hamburgerIconContainer" onClick={handleHamburgerClick}>
+                <Icon icon="codicon:three-bars" className='hamburgerIcon' />
             </li>
             {/* <li className="socialLinks">
                 <button>CV</button>

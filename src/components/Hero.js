@@ -1,6 +1,7 @@
-const Hero = () => {
+const Hero = ({ menuOpen }) => {
     return (
         <div className="heroContainer">
+            {menuOpen && <div className="darkOverlay"></div>}
             <div className="innerHero">
                 <div className="leftInnerHero">
                     <div className="avatarContainer">

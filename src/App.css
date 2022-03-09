@@ -245,6 +245,57 @@ a.lastContainer {
 .navbarLinks ul li {
   font-size: 1rem;
 }
+/* menu */
+.menu {
+  /* transform: translateX(6000px); */
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 80%;
+  border-left: 6px solid var(--medium-red);
+  animation: menuSlide 0.2s ease;
+}
+.closeIconContainer {
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  cursor: pointer;
+  /* background-color: #8d99ae; */
+}
+.closeIconContainer:hover .closeIcon {
+  color: var(--medium-red);
+}
+.closeIcon {
+  font-size: 6rem;
+  transition: all 0.2s ease;
+  color: var(--very-dark-blue);
+}
+.hamburgerIconContainer {
+  cursor: pointer;
+  display: none;
+}
+.hamburgerIconContainer:hover .hamburgerIcon {
+  color: var(--medium-red);
+}
+.hamburgerIcon {
+  font-size: 3rem;
+  transition: all 0.2s ease;
+}
+.menu .menuLinksContainer {
+  width: 100%;
+  margin-top: 200px;
+}
+.menuLinksContainer li {
+  margin-top: 30px;
+}
+.menuLinksContainer li a {
+  font-size: 1.2rem;
+}
 /* social */
 .socialLinksContainer {
   position: fixed;
@@ -326,6 +377,15 @@ a.lastContainer {
   align-items: center;
   min-height: calc(100vh - (86px));
   animation: fadeIn 1.5s ease;
+}
+.darkOverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  height: 20000px;
+  width: 100vw;
+  z-index: 2222;
 }
 .innerHero {
   display: flex;
@@ -415,6 +475,7 @@ a.lastContainer {
   justify-content: space-evenly;
   align-items: center;
   padding: 40px;
+  padding-right: 0px;
   flex: 1;
   height: 100%;
   background-color: var(--very-dark-blue);
@@ -476,7 +537,7 @@ a.lastContainer {
   max-height: 500px !important;
 }
 .grow2 {
-  max-height: 2000px !important;
+  max-height: 3000px !important;
 }
 .readMore {
   display: flex;
@@ -582,6 +643,7 @@ a.lastContainer {
 .projectTitle {
   font-size: 1.8rem;
   color: var(--medium-red);
+  color: var(--light-red);
 }
 .projectDetails {
   text-align: right;
@@ -591,6 +653,9 @@ a.lastContainer {
   align-items: center;
 }
 .projectTechs {
+  display: flex;
+  justify-content: flex-end;
+
   flex-wrap: wrap;
   margin-left: auto;
   line-height: 30px;
@@ -605,8 +670,9 @@ a.lastContainer {
   background-color: var(--white);
   color: var(--white);
   color: var(--very-dark-blue);
-  padding: 2px 8px;
+  padding: 0px 8px;
   margin-left: 5px;
+  margin-top: 5px;
 }
 .projectLinks {
   display: flex;
@@ -629,7 +695,7 @@ a.lastContainer {
 .otherProjectsContainer {
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .otherProjectGrid {
   width: 100%;
@@ -686,11 +752,14 @@ a.lastContainer {
 .otherProjectBottom {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+
   /* border: 1px solid pink; */
   text-align: end;
   height: 100%;
   font-size: 0.9rem;
+}
+.otherProjectDetails {
+  margin-bottom: auto;
 }
 .otherProjectLinks {
   /* margin-top: auto; */
@@ -886,6 +955,14 @@ footer small {
     transform: translateX(0);
   }
 }
+@keyframes menuSlide {
+  0% {
+    transform: translateX(5000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 /* media queries */
 @media (max-width: 1000px) {
   .innerHero {
@@ -905,18 +982,121 @@ footer small {
   .copySuccess {
     margin-right: 40px;
   }
+  .projectLinks {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 900px) {
 }
 @media (max-width: 800px) {
+  body {
+    font-size: 0.9rem !important;
+  }
+  .leftInnerHero {
+    width: 100%;
+  }
+  .rightInnerHero {
+    width: 100%;
+    padding: 20px;
+    padding-right: 0;
+  }
+  .socialLinksContainer {
+    display: none;
+  }
+  .emailContainer {
+    display: none;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .code {
+    font-size: 1rem;
+  }
+  .projectDetails {
+    font-size: 0.9rem;
+  }
+  .otherProjectDetails {
+    font-size: 0.9rem;
+  }
+  .menu {
+  }
+  .navbarLinks {
+    display: none;
+  }
+  .hamburgerIconContainer {
+    display: block;
+  }
 }
 @media (max-width: 700px) {
 }
 @media (max-width: 600px) {
+  .innerHero {
+    margin-top: 360px;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 500px) {
+  .navbar {
+    padding: 8px;
+  }
+  .innerHero {
+    margin-top: 280px;
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .avatarContainer {
+    width: 200px;
+    height: 200px;
+  }
+  .avatarContainerShadow {
+    width: 200px;
+    height: 200px;
+  }
+  .projectImageContainer {
+    min-width: 300px;
+  }
+  .technologyContainer {
+    width: 50px;
+    height: 50px;
+  }
+  .projectRight {
+    padding: 10px;
+  }
+  .hamburgerIcon {
+    font-size: 2rem;
+  }
+  .closeIconContainer {
+    right: -2px;
+    top: 8px;
+  }
+  .closeIcon {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 400px) {
+  .innerHero {
+    margin-top: 320px;
+  }
+  .code {
+    font-size: 0.9rem;
+  }
+  .avatarContainer {
+    width: 180px;
+    height: 180px;
+  }
+  .avatarContainerShadow {
+    width: 180px;
+    height: 180px;
+  }
+  .projectDetails {
+    font-size: 0.8rem;
+  }
+  .otherProjectDetails {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 300px) {
 }

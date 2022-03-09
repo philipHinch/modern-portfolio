@@ -7,6 +7,7 @@ import Email from './components/Email';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
+import Menu from './components/Menu';
 import MyProjects from './components/MyProjects';
 //components
 import Navbar from './components/Navbar';
@@ -15,6 +16,7 @@ import Social from './components/Social';
 function App() {
 
   const [showIntro, setShowIntro] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
 
 
   useEffect(() => {
@@ -30,16 +32,26 @@ function App() {
     setShowIntro(false)
   }, 2000)
 
+  //remove scrollbar when menu is open
+  if (menuOpen) {
+    document.querySelector('body').style.overflow = 'hidden'
+    // document.querySelector('.heroContainer').style.filter
+  } else {
+    document.querySelector('body').style.overflow = 'visible'
+    // document.querySelector('.heroContainer').style.opacity = '1'
+  }
+
   if (showIntro) {
     return <Intro />
   }
 
   return (
     <div className="App">
-      <Navbar />
+      {menuOpen && <Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />}
+      <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       <Social />
       <Email />
-      <Hero />
+      <Hero menuOpen={menuOpen} />
       <AboutMe />
       <MyProjects />
       <ContactMe />
