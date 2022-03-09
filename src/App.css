@@ -1075,6 +1075,12 @@ footer small {
   .closeIcon {
     font-size: 4rem;
   }
+  .css-typing {
+    font-size: 2rem;
+  }
+  .css-typing div {
+    min-width: 300px;
+  }
 }
 @media (max-width: 400px) {
   .innerHero {
