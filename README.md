@@ -6,11 +6,11 @@ Please check it out!
 
 **View NEW Portfolio:**
 
-[View Portfolio](https://philiphinchsliff.vercel.app/).
+[<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_medium.png" />](https://philiphinchsliff.vercel.app/)
 
-**View Portfolio:**
+**View OLD Portfolio:**
 
-[<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png" />](https://philiphinchsliff.vercel.app/)
+[<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png" />](https://philhinchportfolio.netlify.app/)
 
 Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
 
