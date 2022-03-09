@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb:hover {
   min-width: 210px;
   padding-left: 10px;
   transition: border-color 0.2s ease;
-  animation: slideInLeft 1.7s ease;
+  animation: slideInLeft 1.4s ease;
   /* animation: borderPulse 1s infinite; */
 }
 a.firstContainer,
@@ -240,7 +240,7 @@ a.lastContainer {
 .navbarLinks ul {
   display: flex;
   justify-content: center;
-  animation: slideInRight 1.7s ease;
+  animation: slideInRight 1.5s ease;
 }
 .navbarLinks ul li {
   font-size: 1rem;
