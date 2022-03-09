@@ -28,13 +28,6 @@ const Project = ({ type, title, details, link, repo, techs, images }) => {
             <div className="projectLeft">
                 <div className='projectImageContainer'>
                     <Carousel activeIndex={index} onSelect={handleSelect} interval={null} touch={true}>
-                        {/* <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={require('../assets/projectImages/contacts.png')}
-                                alt="Third slide"
-                            />
-                        </Carousel.Item> */}
                         {images && images.map((image) => (
                             <Carousel.Item key={image}>
                                 <img

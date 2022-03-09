@@ -155,7 +155,6 @@ const MyProjects = () => {
                     {otherProjects && otherProjects.map((project) => (
                         <OtherProject title={project.title} tech={project.tech} extraInfo={project.extraInfo} repo={project.repo} link={project.link} type={project.type} key={project.title} />
                     ))}
-                    {/* <OtherProject title={otherProjects.title} tech={otherProjects.tech} extraInfo={otherProjects.extraInfo} repo={otherProjects.repo} link={otherProjects.link} type={otherProjects.type} /> */}
                 </div>
             </div>
 

@@ -35,10 +35,8 @@ function App() {
   //remove scrollbar when menu is open
   if (menuOpen) {
     document.querySelector('body').style.overflow = 'hidden'
-    // document.querySelector('.heroContainer').style.filter
   } else {
     document.querySelector('body').style.overflow = 'visible'
-    // document.querySelector('.heroContainer').style.opacity = '1'
   }
 
   if (showIntro) {

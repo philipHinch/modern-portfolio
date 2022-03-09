@@ -33,12 +33,7 @@ const AboutMe = () => {
                 <div className="aboutMe">I always have been very passionate about computers and the web since I was a little kid. I love to learn new things and as a developer you never stop learning, the thought of that really excites me and it also means that the job will never get boring. I always want to improve myself and keep my knowlege up to date with the latest technologies & trends. I enjoy creating websites and applications that function properly, my eye for detail and my creativity really help me with that. I get extreme satisfaction in solving problems and in this industry there is a never ending array of problems that need to be solved. I have the skills to solve these problems and together with my technical knowlege I always aim to provide good results.</div>
                 <br />
                 <div className={`aboutMe aboutMe2 ${ readMore ? 'grow' : '' }`}>After losing my aviation job during the covid-19 pandemic, I focused on improving my web development skills. This was a great choice because it allowed me to study and in the meantime it allowed me to be at home together with my family and my newborn baby Alex! I am now able to build dynamic and fluid single page applications using the latest technologies. I really enjoy using JavaScript and building various projects. I am currently improving my React.js skills and my solid JavaScript abilities help me out a lot. My plan for the near future is to learn the "MERN Stack" which include Node.js, MongoDB and Express.js.</div>
-                {/* {readMore &&
-                    <>
-                        <br />
-                        <div className="aboutMe aboutMe2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt, ullam autem, magni rem quia nesciunt aperiam, vel architecto recusandae dolorum fuga reiciendis itaque. Voluptatum ad temporibus vitae architecto impedit. Laborum nobis veritatis est repudiandae quod quo quaerat, cumque animi temporibus quam maiores fugiat! Dicta asperiores quo nobis et distinctio praesentium obcaecati, dolor, hic, corporis beatae perspiciatis cumque fugiat voluptatum tempore atque qui! Enim nisi recusandae commodi? Voluptates dolore autem atque qui totam dolorum maxime ad modi inventore rerum numquam voluptatibus asperiores voluptatem architecto nam voluptas, molestias temporibus consectetur cum beatae laudantium perspiciatis dolores sit incidunt! Voluptatum unde ducimus magnam!</div>
-                    </>
-                } */}
+
                 <div className="btn btn-primary readMore" onClick={() => setReadMore(!readMore)}>
                     {readMore ? 'close' : 'readMore'}
                     {readMore ? <Icon icon="charm:chevron-up" className='chevronIcon' />

@@ -9,7 +9,6 @@ const Hero = ({ menuOpen }) => {
                     </div>
                     <div className="avatarContainerShadow"></div>
                     <h1 className='heroIntroHeading'>hello, i'm <span className='firstNameHero'>philip</span>,</h1>
-                    {/* <p className='heroIntro'>i'm <span className="firstNameHero">philip</span>. a front-end web developer who loves to build applications for the web.</p> */}
                     <p className='heroIntroParagraph'>a front-end web developer who loves to build applications for the web.</p>
                 </div>
                 <div className="rightInnerHero">

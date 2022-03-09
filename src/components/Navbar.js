@@ -9,14 +9,7 @@ const Navbar = ({ setMenuOpen, menuOpen }) => {
 
     return (
         <ul className="navbar">
-            {/* <li className="mainLogo">
-                <div className="firstNameContainer">
-                    <span className='firstName'>philip</span>
-                </div>
-                <div className='lastNameContainer'>
-                    <span className='lastName'>hinchsliff</span>
-                </div>
-            </li> */}
+
             <li className="mainLogo">
                 <a href="#" className="firstContainer">
                     <span>{'<'}</span>
