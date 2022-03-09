@@ -10,7 +10,7 @@ Please check it out!
 
 **View OLD Portfolio:**
 
-[<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png" />](https://philhinchportfolio.netlify.app/)
+[<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/my-portfolio/main/images/assets/preview1orange.png" />](https://philhinchportfolio.netlify.app/)
 
 Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
 
