@@ -67,7 +67,15 @@ const projects = [
 
 const otherProjects = [
     {
-        title: 'myMoney',
+        title: 'pokemon cards',
+        tech: ['react', 'firebase', 'hooks', 'router'],
+        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
+        repo: 'https://github.com/philipHinch/my_money',
+        link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'weather app',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -75,7 +83,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
+        title: 'todo list',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -83,7 +91,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
+        title: 'gradient generator',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -91,7 +99,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
+        title: 'gym website',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -99,7 +107,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
+        title: 'restaurant website',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -107,7 +115,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
+        title: 'number guesser',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',
@@ -115,15 +123,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'myMoney',
-        tech: ['react', 'firebase', 'hooks',],
-        extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
-        repo: 'https://github.com/philipHinch/my_money',
-        link: 'https://mymoneytracker.vercel.app/',
-        type: 'personal project'
-    },
-    {
-        title: 'myMoney',
+        title: 'old portfolio',
         tech: ['react', 'firebase', 'hooks',],
         extraInfo: "This my first project ever in which I use backend technologies. Here I have set up user.",
         repo: 'https://github.com/philipHinch/my_money',

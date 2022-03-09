@@ -24,7 +24,7 @@ const Project = ({ type, title, details, link, repo, techs, images }) => {
     };
 
     return (
-        <div className="project" data-aos="fade-in">
+        <div className="project" data-aos="fade-in" data-aos-duration="1000">
             <div className="projectLeft">
                 <div className='projectImageContainer'>
                     <Carousel activeIndex={index} onSelect={handleSelect} interval={null} touch={true}>
@@ -40,7 +40,7 @@ const Project = ({ type, title, details, link, repo, techs, images }) => {
                                 <img
                                     className="d-block w-100"
                                     src={`${ image }`}
-                                    alt="Third slide"
+                                    alt="slide"
                                 />
                             </Carousel.Item>
                         ))}
@@ -61,7 +61,7 @@ const Project = ({ type, title, details, link, repo, techs, images }) => {
                 </div>
                 <div className="projectLinks">
                     <a href={link} className="btn btn-primary" target={'_blank'}>viewProject</a>
-                    <a href={repo} className="btn btn-primary" target={'_blank'}>viewRepo</a>
+                    <a href={repo} className="btn btn-primary repoBtn" target={'_blank'}>viewRepo</a>
                 </div>
             </div>
         </div>

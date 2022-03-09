@@ -24,6 +24,10 @@ const OtherProject = ({ title, tech, extraInfo, repo, link, type }) => {
             </div>
             <div className="otherProjectBottom">
                 <p className="otherProjectDetails">{extraInfo}</p>
+                <div className="projectLinks otherProjectLinks">
+                    <a href={link} className="btn btn-primary" target={'_blank'}>viewProject</a>
+                    <a href={repo} className="btn btn-primary repoBtn" target={'_blank'}>viewRepo</a>
+                </div>
             </div>
         </div>
     );

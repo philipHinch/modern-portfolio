@@ -1,5 +1,5 @@
 //styles
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
@@ -15,6 +15,16 @@ import Social from './components/Social';
 function App() {
 
   const [showIntro, setShowIntro] = useState(true)
+
+
+  useEffect(() => {
+
+    console.log('                   __\r\n                 .\'  \'.\r\n                :      :\r\n                | _  _ |\r\n             .-.|(o)(o)|.-.        _._          _._\r\n            ( ( | .--. | ) )     .\',_ \'.      .\' _,\'.\r\n             \'-\/ (    ) \\-\'     \/ \/\' `\\ \\ __ \/ \/\' `\\ \\\r\n              \/   \'--\'   \\     \/ \/     \\.\'  \'.\/     \\ \\\r\n              \\ `\"====\"` \/     `-`     : _  _ :      `-`\r\n               `\\      \/\'              |(o)(o)|\r\n                 `\\  \/\'                |      |\r\n                 \/`-.-`\\_             \/        \\\r\n           _..:;\\._\/V\\_.\/:;.._       \/   .--.   \\\r\n         .\'\/;:;:;\\ \/^\\ \/:;:;:\\\'.     |  (    )  |\r\n        \/ \/;:;:;:;\\| |\/:;:;:;:\\ \\    _\\  \'--\'  \/__\r\n   jgs \/ \/;:;:;:;:;\\_\/:;:;:;:;:\\ \\ .\'  \'-.__.-\'   `-.\r\n\r\n------------------------------------------------\r\n\r\n');
+    console.log('Hello curious fella! I hope you are enjoying what you are seeing so far. Have an awesome day!');
+
+    //credit to: https://asciiart.website/
+
+  }, [])
 
   setTimeout(() => {
     setShowIntro(false)
