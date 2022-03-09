@@ -14,8 +14,6 @@ Please check it out!
 
 [<img alt="alt_text" width="120px" src="https://raw.githubusercontent.com/philipHinch/my-portfolio/main/images/assets/preview1orange.png" />](https://philhinchportfolio.netlify.app/)
 
-Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
-
 ![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 ### Install Dependencies
@@ -33,6 +31,8 @@ npm start
 ![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 ![Portfolio Preview](https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png)
+
+Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
 
 [View Portfolio](https://philiphinchsliff.vercel.app/).
 
