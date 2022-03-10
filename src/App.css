@@ -810,7 +810,7 @@ footer small {
     color: var(--white);
   }
   50% {
-    color: var(--medium-red);
+    color: var(--light-red);
   }
   100% {
     color: var(--white);
