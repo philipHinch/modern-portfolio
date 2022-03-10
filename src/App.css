@@ -757,6 +757,9 @@ textarea::-webkit-input-placeholder {
   color: var(--very-dark-blue);
   opacity: 0.4;
 }
+#email {
+  /* background-color: var(--white); */
+}
 #email:focus {
   border-color: var(--medium-red) !important;
 }
