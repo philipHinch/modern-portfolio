@@ -11,7 +11,7 @@ const projects = [
     {
         title: 'myMoney',
         tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'state management'],
-        extraInfo: "\"crud\" application with user authentication, database and storage for profile images. users can sign up and then add/remove their expenses and incomes. they can also update their profile picture and username. state managed with useReducer, useContext and useState.",
+        extraInfo: "\"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
         repo: 'https://github.com/philipHinch/my_money',
         link: 'https://mymoneytracker.vercel.app/',
@@ -20,7 +20,7 @@ const projects = [
     {
         title: 'cinemix movie app',
         tech: ['react', 'tailwind-css', 'async-await ', 'fetch api', 'high order functions', 'local storage'],
-        extraInfo: 'find your favourite movies and save them to your watchlist. check the latest, top or upcoming movies or search the films you want with the searchbar. click on a movie to view movie details. movie data was retrieved from a public api',
+        extraInfo: 'Find your favourite movies and save them to your watchlist. Check the latest, top or upcoming movies or search the films you want with the searchbar. Click on a movie to view movie details. movie data was retrieved from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview1.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview2.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview3.png', 'https://raw.githubusercontent.com/philipHinch/cinemix_movies_app/main/src/assets/cinemixpreview4.png'],
         repo: 'https://github.com/philipHinch/cinemix_movies_app',
         link: 'https://cinemix-movies-app.vercel.app/',
@@ -29,7 +29,7 @@ const projects = [
     {
         title: 'my contacts app',
         tech: ['react', 'hooks', 'high order functions', 'local storage'],
-        extraInfo: "a fully responsive app focused on form handling and controlled inputs. save a contact information to the list. filter and sort through all the contact list",
+        extraInfo: "Fully responsive app focused on form handling and controlled inputs. Save a contact information to the list. Filter and sort through all the contact list",
         images: ['https://raw.githubusercontent.com/philipHinch/contacts-app/main/src/assets/preview1.png', 'https://raw.githubusercontent.com/philipHinch/contacts-app/main/src/assets/preview2.png'],
         repo: 'https://github.com/philipHinch/contacts-app',
         link: 'https://my-contacts-appp.herokuapp.com/',
@@ -38,7 +38,7 @@ const projects = [
     {
         title: "phil's recipes",
         tech: ['react', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'search your favourite meals and filter through them by category. clicking on a meal will show a modal with the detailed info about that meal. recipes are fetched from a public api',
+        extraInfo: 'Search your favourite meals and filter through them by category. Clicking on a meal will show a modal with the detailed info about that meal. Recipes are fetched from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview1.png', 'https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview2.png', 'https://raw.githubusercontent.com/philipHinch/phils-recipes/main/src/assets/preview3.png'],
         repo: 'https://github.com/philipHinch/phils-recipes',
         link: 'https://phils-recipes.netlify.app/',
@@ -47,7 +47,7 @@ const projects = [
     {
         title: 'my foods app',
         tech: ['js classes', '(OOP)', 'async-await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: "search your meals based on their category or their country of provenience. the search page will allow you to search meals by their name. save your favourite meals to your favourites page. app built in an OOP (object oriented programming) style. Data retrieved from a public api",
+        extraInfo: "Search your meals based on their category or their country of provenience. the search page will allow you to search meals by their name. save your favourite meals to your favourites page. app built in an OOP (object oriented programming) style. Data retrieved from a public api",
         images: ['https://raw.githubusercontent.com/philipHinch/my-foods-app/main/images/preview1.png'],
         repo: 'https://github.com/philipHinch/my-foods-app',
         link: 'https://philiphinch.github.io/my-foods-app/',
@@ -57,7 +57,7 @@ const projects = [
     {
         title: 'world countries',
         tech: ['js', 'async-await', 'fetch api', 'high order functions'],
-        extraInfo: 'app that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. The data was retrieved from a public api',
+        extraInfo: 'App that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. Data was retrieved from a public api',
         images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
         repo: 'https://github.com/philipHinch/world-countries',
         link: 'https://world-countries-database.netlify.app/',

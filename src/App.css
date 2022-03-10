@@ -13,6 +13,10 @@
 .red {
   color: var(--medium-red);
 }
+.large {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 /* general */
 * {
   margin: 0;
@@ -485,6 +489,13 @@ a.lastContainer {
   flex-direction: column;
   align-items: center;
 }
+.aboutMeIntro {
+  /* border: 2px solid var(--medium-red); */
+  /* padding: 0px 300px; */
+  /* color: var(--medium-red); */
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .aboutMe {
   line-height: 30px;
 }
@@ -494,7 +505,7 @@ a.lastContainer {
   transition: 0.5s;
 }
 .grow {
-  max-height: 500px !important;
+  max-height: 1500px !important;
 }
 .grow2 {
   max-height: 3000px !important;
@@ -938,6 +949,9 @@ footer small {
   .code {
     font-size: 1rem;
   }
+  .aboutMeIntro {
+    font-size: 1.1rem;
+  }
   .projectDetails {
     font-size: 0.9rem;
   }
@@ -964,6 +978,9 @@ footer small {
   }
 }
 @media (max-width: 500px) {
+  .large {
+    font-size: 1.1rem;
+  }
   .navbar {
     padding: 8px;
   }
@@ -980,6 +997,12 @@ footer small {
   .avatarContainerShadow {
     width: 200px;
     height: 200px;
+  }
+  .container {
+    text-align: center;
+  }
+  .containerHeader {
+    text-align: start;
   }
   .projectImageContainer {
     min-width: 300px;
