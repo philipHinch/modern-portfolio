@@ -136,6 +136,10 @@ a.navbarLink:hover::before {
   align-items: center;
   animation: fadeOut 1s ease forwards;
   animation-delay: 2200ms;
+  background-color: #edf2f4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.06'%3E%3Cpolygon fill='%23e9c2cb' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e593a3' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e1637a' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23dd3452' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D90429' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .css-typing div {
   min-width: 450px;
@@ -242,6 +246,7 @@ a.lastContainer {
   height: 100%;
   width: 80%;
   border-left: 6px solid var(--medium-red);
+  border-top: 6px solid var(--medium-red);
   animation: menuSlide 0.2s ease;
 }
 .closeIconContainer {
@@ -426,7 +431,7 @@ a.lastContainer {
   height: 260px;
   width: 260px;
   margin-left: 100px;
-  margin-bottom: 240px;
+  margin-bottom: 250px;
   background-color: var(--medium-red);
   border: 2px solid var(--very-dark-blue);
   transition: background-color 0.2s ease;
@@ -498,6 +503,7 @@ a.lastContainer {
 }
 .aboutMe {
   line-height: 30px;
+  backdrop-filter: blur(20px);
 }
 .aboutMe2 {
   max-height: 0;
@@ -535,6 +541,7 @@ a.lastContainer {
   width: 80px;
   height: 80px;
   filter: saturate(0.4);
+  backdrop-filter: blur(20px);
 }
 .technologyContainer img {
   width: 100%;
