@@ -1,7 +1,7 @@
-const Hero = ({ menuOpen }) => {
+const Hero = ({ menuOpen, setMenuOpen }) => {
     return (
         <div className="heroContainer">
-            {menuOpen && <div className="darkOverlay"></div>}
+            {menuOpen && <div className="darkOverlay" onClick={() => setMenuOpen(false)}></div>}
             <div className="innerHero">
                 <div className="leftInnerHero">
                     <div className="avatarContainer">

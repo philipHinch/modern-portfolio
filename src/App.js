@@ -49,7 +49,7 @@ function App() {
       <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       <Social />
       <Email />
-      <Hero menuOpen={menuOpen} />
+      <Hero menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <AboutMe />
       <MyProjects />
       <ContactMe />
