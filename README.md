@@ -32,11 +32,7 @@ npm start
 
 ![Portfolio Preview](https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png)
 
----
-
-![Portfolio Preview](https://github.com/philipHinch/modern-portfolio/blob/main/src/assets/previews/modern_portfolio_mobile2.png)
-
----
+![Portfolio Preview](https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_mobile.png)
 
 Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/)
 
