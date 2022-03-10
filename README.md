@@ -32,9 +32,11 @@ npm start
 
 ![Portfolio Preview](https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png)
 
-Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/).
+![Portfolio Preview](https://github.com/philipHinch/modern-portfolio/blob/main/src/assets/previews/modern_portfolio_mobile2.png)
 
-[View Portfolio](https://philiphinchsliff.vercel.app/).
+Inspired by: [https://brittanychiang.com/](https://brittanychiang.com/)
+
+[View Portfolio](https://philiphinchsliff.vercel.app/)
 
 
 
