@@ -24,7 +24,7 @@ const Project = ({ type, title, details, link, repo, techs, images }) => {
     };
 
     return (
-        <div className="project" data-aos="fade-in" data-aos-duration="1000">
+        <div className="project" data-aos="fade-in" data-aos-duration="500">
             <div className="projectLeft">
                 <div className='projectImageContainer'>
                     <Carousel activeIndex={index} onSelect={handleSelect} interval={null} touch={true}>
