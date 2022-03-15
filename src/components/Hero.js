@@ -5,7 +5,7 @@ const Hero = ({ menuOpen, setMenuOpen }) => {
             <div className="innerHero">
                 <div className="leftInnerHero">
                     <div className="avatarContainer">
-                        <img src={require('../assets/other/avatar.png')} alt="" />
+                        <img src='https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/other/avatar.png' alt="avatar" />
                     </div>
                     <div className="avatarContainerShadow"></div>
                     <h1 className='heroIntroHeading'>hello, i'm <span className='firstNameHero'>philip</span>,</h1>
