@@ -62,6 +62,15 @@ const projects = [
         repo: 'https://github.com/philipHinch/world-countries',
         link: 'https://world-countries-database.netlify.app/',
         type: 'personal project'
+    },
+    {
+        title: 'date countdown',
+        tech: ['react', 'react hooks', 'date-object'],
+        extraInfo: 'Want to know how many days untill Christmas? This app will countdown to your selected date and tell you how long to wait untill your favourite holiday',
+        images: ['https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview1.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview2.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview3.png'],
+        repo: 'https://github.com/philipHinch/new_years_countdown',
+        link: 'https://date-countdown-xi.vercel.app/',
+        type: 'personal project'
     }
 ];
 
