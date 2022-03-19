@@ -11,7 +11,7 @@ const projects = [
     {
         title: 'myMoney',
         tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'state management'],
-        extraInfo: "\"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
+        extraInfo: "Full-Stack \"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
         repo: 'https://github.com/philipHinch/my_money',
         link: 'https://mymoneytracker.vercel.app/',

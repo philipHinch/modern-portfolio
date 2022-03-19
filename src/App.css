@@ -719,7 +719,9 @@ a.lastContainer {
 /* carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1);
+  /* filter: invert(1); */
+  transform: scale(1.4);
+  background-color: var(--very-dark-blue);
 }
 .carousel-indicators {
   filter: invert(1);
