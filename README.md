@@ -30,6 +30,10 @@ npm start
 
 ![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
+##Technologies used:
+
+https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+
 ![Portfolio Preview](https://raw.githubusercontent.com/philipHinch/modern-portfolio/main/src/assets/previews/modern_portfolio_wide.png)
 
 ![Portfolio Preview](https://github.com/philipHinch/modern-portfolio/blob/main/src/assets/previews/modern_portfolio_mobile2.png)
