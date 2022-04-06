@@ -14,6 +14,8 @@ import bootstrapLogo from '../assets/other/bootstraplogo.svg';
 import routerLogo from '../assets/other/reactrouterlogo.svg';
 import jestLogo from '../assets/other/jestlogo.svg';
 import npmLogo from '../assets/other/npmlogo.svg';
+import nodeLogo from '../assets/other/node.svg';
+import expressLogo from '../assets/other/express.svg';
 //icons
 import { Icon } from '@iconify/react';
 //hooks
@@ -60,11 +62,17 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='React'>
                         <img src={reactLogo} alt="react logo" />
                     </div>
-                    <div className="technologyContainer" title='Jest'>
-                        <img src={jestLogo} alt="jest logo" />
+                    <div className="technologyContainer" title='Node'>
+                        <img src={nodeLogo} alt="node logo" />
+                    </div>
+                    <div className="technologyContainer" title='Express'>
+                        <img src={expressLogo} alt="express logo" />
                     </div>
                     <div className="technologyContainer" title='Firebase'>
                         <img src={firebaseLogo} alt="firebase logo" />
+                    </div>
+                    <div className="technologyContainer" title='Jest'>
+                        <img src={jestLogo} alt="jest logo" />
                     </div>
                     <div className="technologyContainer" title='Git'>
                         <img src={gitLogo} alt="git logo" />
@@ -81,9 +89,9 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='Figma'>
                         <img src={figmaLogo} alt="figma logo" />
                     </div>
-                    <div className="technologyContainer" title='VS Code'>
+                    {/* <div className="technologyContainer" title='VS Code'>
                         <img src={vsLogo} alt="vs code logo" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
