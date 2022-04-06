@@ -11,7 +11,8 @@ const ContactMe = () => {
                 <small>from:</small>
                 <input type="email" id='email' name="email" placeholder="enter your email.." required />
                 <small>to:</small>
-                <input type="email" id='myEmail' name="email" placeholder="philip.hinchsliff@yahoo.com" disabled />
+                {/* <input type="email" id='myEmail' name="email" placeholder="philip.hinchsliff@yahoo.com" disabled /> */}
+                <p id="myEmail">philip.hinchsliff@yahoo.com</p>
                 <small>message:</small>
                 <textarea name='message' id='textarea' rows='10' cols='20'
                     maxLength='500'

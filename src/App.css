@@ -785,6 +785,15 @@ textarea::-webkit-input-placeholder {
   background-color: var(--salmon);
   border: none;
 }
+p#myEmail{
+  border: 2px solid var(--salmon);
+  padding: 10px 15px;
+  outline: none !important;
+  width: 100%;
+  letter-spacing: 1px;
+  font-family: inherit;
+  color: var(--white);
+}
 #myEmail::-webkit-input-placeholder {
   color: white;
   opacity: 0.8;
@@ -808,7 +817,7 @@ footer {
   letter-spacing: 1px;
 }
 footer small {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .githubLink {
   text-decoration: none;
