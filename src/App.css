@@ -793,6 +793,7 @@ p#myEmail{
   letter-spacing: 1px;
   font-family: inherit;
   color: var(--white);
+  text-align: start;
 }
 #myEmail::-webkit-input-placeholder {
   color: white;
