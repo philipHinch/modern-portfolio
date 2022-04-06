@@ -284,6 +284,22 @@ a.lastContainer {
 .menuLinksContainer li a {
   font-size: 1.2rem;
 }
+.menuSocialLinksContainer{
+  position: absolute;
+  bottom:60px;
+  display: flex;
+}
+.menuSocialLinksContainer .menuSocialIcon{
+  font-size: 1.9rem;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--very-dark-blue);
+  transition: all 0.2s ease-in-out;
+}
+.menuSocialIconContainer:hover .menuSocialIcon {
+  color: var(--medium-red);
+  transform: scale(1.1);
+}
 /* social */
 .socialLinksContainer {
   position: fixed;

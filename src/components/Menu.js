@@ -1,5 +1,7 @@
 //icons
 import { Icon } from '@iconify/react';
+//components
+import MenuSocial from './MenuSocial';
 
 
 const Menu = ({ setMenuOpen, menuOpen }) => {
@@ -22,6 +24,7 @@ const Menu = ({ setMenuOpen, menuOpen }) => {
                 <li><a href="#myProjects" className='navbarLink' onClick={handleLinkClick}><span className='red'>02.</span>myProjects</a></li>
                 <li><a href="#contactMe" className='navbarLink' onClick={handleLinkClick}><span className='red'>03.</span>contactMe</a></li>
             </ul>
+            <MenuSocial />
         </div>
     );
 }
