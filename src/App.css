@@ -813,11 +813,28 @@ p#myEmail{
 footer {
   margin-top: 200px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
+.goToTop{
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.goToTop:hover{
+  color: var(--medium-red) !important;
+}
+.goToTop:hover .upArrowIcon{
+  transform: scale(1.1);
+}
+.upArrowIcon{
+  font-size: 1.9rem;
+  /* margin-left:10px ; */
+}
 footer small {
+  display: block;
+  margin-top: 30px;
   padding-bottom: 20px;
 }
 .githubLink {
@@ -1011,7 +1028,7 @@ footer small {
   .innerHero {
     margin-top: 360px;
   }
-  footer {
+  footer,.goToTop {
     font-size: 0.9rem;
   }
 }
