@@ -18,6 +18,15 @@ const projects = [
         type: 'personal project'
     },
     {
+        title: 'space tourism',
+        tech: ['react', 'react-hooks', 'react-router', 'css animations'],
+        extraInfo: 'frontend mentor challenge in which the goal is to build out a multi-page space tourism website and get it looking as close to the original design as possible. (link in repository)',
+        images: ['https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/destination-desktop-preview.png', 'https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/crew-desktop-preview.png?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-desktop-preview.png?raw=truehttps://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-desktop-preview.png?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/home-tablet-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-tablet-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/crew-mobile-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/destination-mobile-preview.jpg?raw=true'],
+        repo: 'https://github.com/philipHinch/space_tourism',
+        link: 'https://space-tourism-travel.vercel.app/',
+        type: 'challenge project'
+    },
+    {
         title: 'cinemix movie app',
         tech: ['react', 'tailwind-css', 'async-await ', 'fetch api', 'high order functions', 'local storage'],
         extraInfo: 'Find your favourite movies and save them to your watchlist. Check the latest, top or upcoming movies or search the films you want with the searchbar. Click on a movie to view movie details. movie data was retrieved from a public api',
@@ -63,18 +72,19 @@ const projects = [
         link: 'https://world-countries-database.netlify.app/',
         type: 'personal project'
     },
+
+];
+
+const otherProjects = [
     {
         title: 'date countdown',
-        tech: ['react', 'react hooks', 'date-object'],
-        extraInfo: 'Want to know how many days until Christmas? This app will countdown to your selected date and tell you how long you need to wait for your favourite holiday',
+        tech: ['react', 'react-hooks', 'date-object'],
+        extraInfo: 'How many days until Christmas? This app will countdown to your selected date and tell you how long you need to wait for your favourite holiday',
         images: ['https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview1.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview2.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview3.png'],
         repo: 'https://github.com/philipHinch/new_years_countdown',
         link: 'https://date-countdown-xi.vercel.app/',
         type: 'personal project'
-    }
-];
-
-const otherProjects = [
+    },
     {
         title: 'pokemon flip cards',
         tech: ['js', 'css', 'fetch api', 'async/await', 'animations'],
@@ -125,14 +135,14 @@ const otherProjects = [
         link: 'https://shoppinglistmy.netlify.app/',
         type: 'personal project'
     },
-    {
-        title: 'gym website',
-        tech: ['js', 'css', 'html',],
-        extraInfo: "a fully responsive simple but cool looking gym website",
-        repo: 'https://github.com/philipHinch/PowerGym',
-        link: 'https://powergyms.netlify.app/',
-        type: 'personal project'
-    },
+    // {
+    //     title: 'gym website',
+    //     tech: ['js', 'css', 'html',],
+    //     extraInfo: "a fully responsive simple but cool looking gym website",
+    //     repo: 'https://github.com/philipHinch/PowerGym',
+    //     link: 'https://powergyms.netlify.app/',
+    //     type: 'personal project'
+    // },
 
     {
         title: 'number guessing game',
