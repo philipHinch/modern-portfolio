@@ -9,7 +9,7 @@ import OtherProject from "./OtherProject";
 
 const projects = [
     {
-        title: 'myMoney',
+        title: 'expenses tracking app',
         tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'state management'],
         extraInfo: "Full-Stack \"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
@@ -72,10 +72,37 @@ const projects = [
         link: 'https://world-countries-database.netlify.app/',
         type: 'personal project'
     },
+    {
+        title: '3D credit card designer',
+        tech: ['react', 'react-hooks', 'usecontext', 'usereducer', 'css animations'],
+        extraInfo: 'Customise and create your own credit card. Choose the card theme from a range of patterns and decide which colour you want for the back. Use mouse for better experience',
+        images: ['https://raw.githubusercontent.com/philipHinch/credit_card_validation/main/src/assets/previews/credit_card_preview_large.png', 'https://raw.githubusercontent.com/philipHinch/credit_card_validation/main/src/assets/previews/credit_card_preview_small.png'],
+        repo: 'https://github.com/philipHinch/credit_card_validation',
+        link: 'https://credit-card-creator.vercel.app/',
+        type: 'personal project'
+    },
 
 ];
 
 const otherProjects = [
+    {
+        title: 'creative agency',
+        tech: ['react', 'css', 'css grid'],
+        extraInfo: 'A "Frontend Mentor" challenge where the goal is to build out a landing page and get it looking as close to the original design as possible.',
+        images: [''],
+        repo: 'https://github.com/philipHinch/creative_agency',
+        link: 'https://creative-agency-sunnyside.vercel.app/',
+        type: 'challenge project'
+    },
+    {
+        title: 'food maker',
+        tech: ['react', 'react-hooks', 'css'],
+        extraInfo: 'Build your burger by adding ingredients and see your burger come to life.',
+        images: [''],
+        repo: 'https://github.com/philipHinch/food_maker',
+        link: 'https://food-maker.vercel.app/',
+        type: 'personal project'
+    },
     {
         title: 'date countdown',
         tech: ['react', 'react-hooks', 'date-object'],

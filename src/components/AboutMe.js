@@ -62,6 +62,9 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='React'>
                         <img src={reactLogo} alt="react logo" />
                     </div>
+                    <div className="technologyContainer" title='React Router 6'>
+                        <img src={routerLogo} alt="react router logo" />
+                    </div>
                     <div className="technologyContainer" title='Node'>
                         <img src={nodeLogo} alt="node logo" />
                     </div>
