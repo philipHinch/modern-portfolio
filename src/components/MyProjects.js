@@ -10,11 +10,20 @@ import OtherProject from "./OtherProject";
 const projects = [
     {
         title: 'expenses tracking app',
-        tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'state management'],
+        tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'useContext/useReducer'],
         extraInfo: "Full-Stack \"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
         repo: 'https://github.com/philipHinch/my_money',
         link: 'https://mymoneytracker.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'world countries react',
+        tech: ['react', , 'mapbox-gl-js', 'useContext/useReducer', 'async-await', 'fetch-api', 'high-order-functions', 'css-animations'],
+        extraInfo: 'This app will display all the information of all the countries in the world. You can sort them by name, population, area and capital. Clicking on the country will display extra information & show the mapbox',
+        images: ['https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview.png?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview_medium.jpg?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview_small.jpg?raw=true'],
+        repo: 'https://github.com/philipHinch/world_countries_react',
+        link: 'https://world-countries-react.vercel.app/',
         type: 'personal project'
     },
     {
@@ -64,15 +73,6 @@ const projects = [
 
     },
     {
-        title: 'world countries',
-        tech: ['js', 'async-await', 'fetch api', 'high order functions'],
-        extraInfo: 'App that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. Data was retrieved from a public api',
-        images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
-        repo: 'https://github.com/philipHinch/world-countries',
-        link: 'https://world-countries-database.netlify.app/',
-        type: 'personal project'
-    },
-    {
         title: '3D credit card designer',
         tech: ['react', 'react-hooks', 'usecontext', 'usereducer', 'css animations'],
         extraInfo: 'Customise and create your own credit card. Choose the card theme from a range of patterns and decide which colour you want for the back. Use mouse for better experience',
@@ -110,6 +110,15 @@ const otherProjects = [
         images: ['https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview1.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview2.png', 'https://raw.githubusercontent.com/philipHinch/new_years_countdown/main/src/assets/previews/countdownpreview3.png'],
         repo: 'https://github.com/philipHinch/new_years_countdown',
         link: 'https://date-countdown-xi.vercel.app/',
+        type: 'personal project'
+    },
+    {
+        title: 'world countries vanilla',
+        tech: ['js', 'async-await', 'fetch api', 'high order functions'],
+        extraInfo: 'App that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. Data was retrieved from a public api',
+        images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
+        repo: 'https://github.com/philipHinch/world-countries',
+        link: 'https://world-countries-database.netlify.app/',
         type: 'personal project'
     },
     {
