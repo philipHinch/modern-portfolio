@@ -115,7 +115,7 @@ const otherProjects = [
     {
         title: 'world countries vanilla',
         tech: ['js', 'async-await', 'fetch api', 'high order functions'],
-        extraInfo: 'App that provides information about all the 250 countries of the world. search countries or sort them either by population or by area. Data was retrieved from a public api',
+        extraInfo: 'View info about countries of the world. Search or sort them either by population, area or capital. Data was retrieved from a api',
         images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
         repo: 'https://github.com/philipHinch/world-countries',
         link: 'https://world-countries-database.netlify.app/',
