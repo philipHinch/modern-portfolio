@@ -1,16 +1,16 @@
 //components
 import Project from "./Project";
+import OtherProject from "./OtherProject";
 //icons
 import { Icon } from '@iconify/react';
 //hooks
 import { useState } from "react";
-import OtherProject from "./OtherProject";
 
 
 const projects = [
     {
         title: 'expenses tracking app',
-        tech: ['react', 'firebase', 'user-auth', 'database', 'storage', 'async-await', 'hooks', 'useContext/useReducer'],
+        tech: ['react', 'hooks', 'context-api', 'async-await', 'firebase', 'user-auth', 'database', 'storage'],
         extraInfo: "Full-Stack \"CRUD\" application with user authentication, database and storage for profile images. Users can sign up and then add/remove their expenses and incomes. They can also update their profile picture and username",
         images: ['https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/desktoppreview.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/multidevicemock.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/tabletpreview2.png', 'https://raw.githubusercontent.com/philipHinch/my_money/main/src/assets/png/mobilepreview.png'],
         repo: 'https://github.com/philipHinch/my_money',
@@ -19,7 +19,7 @@ const projects = [
     },
     {
         title: 'world countries react',
-        tech: ['react', , 'mapbox-gl-js', 'useContext/useReducer', 'async-await', 'fetch-api', 'high-order-functions', 'css-animations'],
+        tech: ['react', 'mapbox-gl-js', 'context-api', 'async-await', 'fetch-api', 'high-order-functions', 'css-animations'],
         extraInfo: 'This app will display all the information of all the countries in the world. You can sort them by name, population, area and capital. Clicking on the country will display extra information & show the mapbox',
         images: ['https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview.png?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview2.png?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/world_countries_preview_large_modal1.png?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/world_countries_preview_large_modal2.png?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview_medium.jpg?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/preview_small.jpg?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/smartmockups_l3hg77n0.jpg?raw=true', 'https://github.com/philipHinch/world_countries_react/blob/main/src/assets/previews/smartmockups_l3hg7htn.jpg?raw=true'],
         repo: 'https://github.com/philipHinch/world_countries_react',
@@ -27,8 +27,17 @@ const projects = [
         type: 'personal project'
     },
     {
+        title: 'my pokedex',
+        tech: ['react', 'hooks', 'context-api', 'async-await', 'fetch-api', 'high-order-functions', 'css-animations', 'css-pseudo'],
+        extraInfo: 'A test for a dev company. View all or search a specific pokemon and save them to your favourites and compare them with one another by activating the compare mode',
+        images: ['https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_desktop_preview.png?raw=true', 'https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_desktop_preview_2.png?raw=true', 'https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_desktop_preview_3.png?raw=true', 'https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_mobile_preview.jpg?raw=true', 'https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_mobile_preview_2.jpg?raw=true', 'https://github.com/philipHinch/my_pokedex/blob/main/src/assets/previews/pokedex_mobile_preview_3.jpg?raw=true'],
+        repo: 'https://github.com/philipHinch/my_pokedex',
+        link: 'https://my-pokedex-nu.vercel.app/',
+        type: 'developer test'
+    },
+    {
         title: 'space tourism',
-        tech: ['react', 'react-hooks', 'react-router', 'css animations'],
+        tech: ['react', 'react-hooks', 'react-router', 'css-animations'],
         extraInfo: 'frontend mentor challenge in which the goal is to build out a multi-page space tourism website and get it looking as close to the original design as possible. (link in repository)',
         images: ['https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/destination-desktop-preview.png', 'https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/crew-desktop-preview.png?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-desktop-preview.png?raw=truehttps://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-desktop-preview.png?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/home-tablet-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-tablet-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/crew-mobile-preview.jpg?raw=true', 'https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/destination-mobile-preview.jpg?raw=true'],
         repo: 'https://github.com/philipHinch/space_tourism',
@@ -113,7 +122,7 @@ const otherProjects = [
         type: 'personal project'
     },
     {
-        title: 'world countries vanilla',
+        title: 'world countries',
         tech: ['js', 'async-await', 'fetch api', 'high order functions'],
         extraInfo: 'View info about countries of the world. Search or sort them either by population, area or capital. Data was retrieved from a api',
         images: ['https://raw.githubusercontent.com/philipHinch/world-countries/main/images/preview.png'],
