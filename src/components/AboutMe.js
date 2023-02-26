@@ -16,6 +16,11 @@ import jestLogo from '../assets/other/jestlogo.svg';
 import npmLogo from '../assets/other/npmlogo.svg';
 import nodeLogo from '../assets/other/node.svg';
 import expressLogo from '../assets/other/express.svg';
+import vueLogo from '../assets/other/vue.svg';
+import nuxtLogo from '../assets/other/nuxt.svg';
+import storybookLogo from '../assets/other/storybook.svg';
+import devopsLogo from '../assets/other/devops.svg';
+import umbracoLogo from '../assets/other/umbraco.svg';
 //icons
 import { Icon } from '@iconify/react';
 //hooks
@@ -62,8 +67,17 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='React'>
                         <img src={reactLogo} alt="react logo" />
                     </div>
-                    <div className="technologyContainer" title='React Router 6'>
-                        <img src={routerLogo} alt="react router logo" />
+                    <div className="technologyContainer" title='Vue'>
+                        <img src={vueLogo} alt="vue logo" />
+                    </div>
+                    <div className="technologyContainer" title='Nuxt'>
+                        <img src={nuxtLogo} alt="nuxt logo" />
+                    </div>
+                    <div className="technologyContainer" title='Storybook'>
+                        <img src={storybookLogo} alt="react logo" />
+                    </div>
+                    <div className="technologyContainer" title='Umbraco'>
+                        <img src={umbracoLogo} alt="umbraco logo" />
                     </div>
                     <div className="technologyContainer" title='Node'>
                         <img src={nodeLogo} alt="node logo" />
@@ -77,8 +91,14 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='Jest'>
                         <img src={jestLogo} alt="jest logo" />
                     </div>
+                    <div className="technologyContainer" title='Devops'>
+                        <img src={devopsLogo} alt="devops logo" />
+                    </div>
                     <div className="technologyContainer" title='Git'>
                         <img src={gitLogo} alt="git logo" />
+                    </div>
+                    <div className="technologyContainer" title='Sass'>
+                        <img src={sassLogo} alt="sass logo" />
                     </div>
                     <div className="technologyContainer" title='Tailwind CSS'>
                         <img src={tailwind} alt="tailwind logo" />
