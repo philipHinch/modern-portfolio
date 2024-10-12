@@ -21,17 +21,15 @@ import nuxtLogo from '../assets/other/nuxt.svg';
 import storybookLogo from '../assets/other/storybook.svg';
 import devopsLogo from '../assets/other/devops.svg';
 import umbracoLogo from '../assets/other/umbraco.svg';
+import viteLogo from '../assets/other/vite-icon.svg';
+import typescriptLogo from '../assets/other/typescript-icon.svg';
 //icons
 import { Icon } from '@iconify/react';
 //hooks
 import { useState } from 'react';
 
-
 const AboutMe = () => {
-
     const [readMore, setReadMore] = useState(false)
-
-
 
     return (
         <div className="container" id='aboutMe'>
@@ -70,8 +68,14 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='Vue'>
                         <img src={vueLogo} alt="vue logo" />
                     </div>
+                    <div className="technologyContainer" title='Typescript'>
+                        <img src={typescriptLogo} alt="typescript logo" />
+                    </div>
                     <div className="technologyContainer" title='Nuxt'>
                         <img src={nuxtLogo} alt="nuxt logo" />
+                    </div>
+                    <div className="technologyContainer" title='Vite'>
+                        <img src={viteLogo} alt="vite logo" />
                     </div>
                     <div className="technologyContainer" title='Storybook'>
                         <img src={storybookLogo} alt="react logo" />
@@ -88,9 +92,9 @@ const AboutMe = () => {
                     <div className="technologyContainer" title='Firebase'>
                         <img src={firebaseLogo} alt="firebase logo" />
                     </div>
-                    <div className="technologyContainer" title='Jest'>
+                    {/* <div className="technologyContainer" title='Jest'>
                         <img src={jestLogo} alt="jest logo" />
-                    </div>
+                    </div> */}
                     <div className="technologyContainer" title='Devops'>
                         <img src={devopsLogo} alt="devops logo" />
                     </div>
